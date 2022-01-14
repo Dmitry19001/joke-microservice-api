@@ -4,7 +4,9 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { TestModule } from './test/test.module';
 import { CategoriesModule } from './categories/categories.module';
-import ClientConfig from './client-config.hostos';
+import { JokesModule } from './jokes/jokes.module';
+import { LogsModule } from './logs/logs.module';
+import ClientConfig from './client-config';
 
 @Global()
 @Module({
@@ -39,7 +41,9 @@ import ClientConfig from './client-config.hostos';
       },
     ]),
     TestModule,
-    CategoriesModule
+    CategoriesModule,
+    JokesModule,
+    LogsModule
   ],
   controllers: [AppController],
   providers: [AppService],

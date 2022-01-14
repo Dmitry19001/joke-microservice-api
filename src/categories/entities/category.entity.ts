@@ -1,3 +1,5 @@
+import { Joke } from "src/jokes/entities/joke.entity";
+
 export class Category {
     id: number;
     name: string;
@@ -5,5 +7,5 @@ export class Category {
     created: Date;
     modified: Date;
     isActive: boolean;
-    // jokes: Joke[];
+    jokes: Joke[];
 }
